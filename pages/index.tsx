@@ -70,7 +70,9 @@ export const IndexPage: FC = () => {
                 </div>
             </div>
 
-            <h1 className="pt-5 pb-8 text-4xl text-bold text-center text-semibold border-t-2 text-gray-600">Components and Templates</h1>
+            <h1 className="pt-5 pb-8 text-4xl text-bold text-center text-semibold border-t-2 text-gray-600">
+                Components and Templates
+            </h1>
             <Elements />
             <Forms />
             <Commerce />

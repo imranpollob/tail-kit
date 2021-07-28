@@ -42,12 +42,7 @@ const AppHeader = (props: Props) => {
                                 </a>
                             </Link>
 
-                            <a
-                                href="https://github.com/pollmix/tail-kit"
-                                target="_blank"
-                                rel="noreferrer"
-                                className=""
-                            >
+                            <a href="https://github.com/pollmix/tail-kit" target="_blank" rel="noreferrer" className="">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"

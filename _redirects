@@ -1,0 +1,4 @@
+# Redirect default Netlify subdomain to primary domain
+
+https://polui.netlify.app/* https://ui.imranpollob.com/:splat 301!
+https://www.ui.imranpollob.com/* https://ui.imranpollob.com/:splat 301!
