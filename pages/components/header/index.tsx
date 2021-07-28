@@ -40,7 +40,7 @@ const HeaderPage: FC = () => {
             title="Headers sections free Tailwind components"
             desc="Headers, TopBar, Navbar and more components for tailwind css"
         >
-            <SectionHeader title="Header" />
+            <SectionHeader title="Headers" />
             <ComponentLayout
                 vertical={true}
                 title="Light"

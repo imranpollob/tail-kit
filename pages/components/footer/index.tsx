@@ -42,7 +42,7 @@ const FooterPage: FC = () => {
             title="Footers sections free Tailwind components"
             desc="Footers sections more components for tailwind css"
         >
-            <SectionHeader title="Footer" />
+            <SectionHeader title="Footers" />
             <ComponentLayout
                 vertical={true}
                 showSwitchMode={true}

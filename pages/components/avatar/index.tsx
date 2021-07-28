@@ -11,7 +11,7 @@ const AvatarPage: FC = () => {
             title="Avatars free Tailwind components"
             desc="Avatars, profile pictures... components for tailwind css"
         >
-            <SectionHeader title="Avatar" />
+            <SectionHeader title="Avatars" />
             <ComponentLayout title="Simple full rounded avatar" element={<Avatar />} component={Avatar} />
             <ComponentLayout title="small full rounded avatar" element={<Avatar size="small" />} component={Avatar} />
             <ComponentLayout title="Big full rounded avatar" element={<Avatar size="big" />} component={Avatar} />

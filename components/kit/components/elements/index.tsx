@@ -22,7 +22,7 @@ const Elements: FC = () => {
             link: '/components/avatar',
         },
         {
-            title: 'Menu list',
+            title: 'Dropdowns',
             items: 7,
             img: 'images/sections/ddm.png',
             link: '/components/ddm',

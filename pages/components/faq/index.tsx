@@ -41,7 +41,7 @@ const FaqPage = () => {
 
     return (
         <AppLayout title="FAQ free Tailwind components" desc="FAQ, layouts and more components for tailwind css">
-            <SectionHeader title="FAQ" />
+            <SectionHeader title="FAQs" />
             <ComponentLayout
                 vertical={false}
                 title="Simple FAQ"

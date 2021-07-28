@@ -10,7 +10,7 @@ const ProgressPage = () => {
             title="Progress bar free Tailwind components"
             desc="Progress bar and more components for tailwind css"
         >
-            <SectionHeader title="Progress bar" />
+            <SectionHeader title="Progress bars" />
             <ComponentLayout
                 vertical={true}
                 title="Simple progress bar"

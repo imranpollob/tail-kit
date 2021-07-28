@@ -10,7 +10,7 @@ import { TimePicker } from '../../../components/kit/components/form/dateTimePick
 const InputTextPage: FC = () => {
     return (
         <AppLayout title="Inputs text free Tailwind components" desc="Input and more components for tailwind css">
-            <SectionHeader title="Input" />
+            <SectionHeader title="Inputs" />
 
             <ComponentLayout
                 title="Simple"

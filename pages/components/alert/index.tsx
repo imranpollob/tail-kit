@@ -22,7 +22,7 @@ const AlertPage: FC = () => {
             title="Alert free Tailwind components"
             desc="Alerts, Modales, Banners ... components for tailwind css"
         >
-            <SectionHeader title="Alert" />
+            <SectionHeader title="Alerts" />
             <ComponentLayout
                 vertical={false}
                 title="Simple text alert"

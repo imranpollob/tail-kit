@@ -36,7 +36,7 @@ const DataPage = () => {
             title="Data display free Tailwind components"
             desc="Data, Cards and more components for tailwind css"
         >
-            <SectionHeader title="Data display" />
+            <SectionHeader title="Dashboards" />
             <ComponentLayout
                 vertical={false}
                 showSwitchMode={true}
