@@ -1,15 +1,15 @@
 import { FC } from 'react';
 import HomeLayout from '../components/layout/HomeLayout';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
-const HomeComps = dynamic(() => import('../components/site/home/HomeComps'));
-import { isMobile } from 'react-device-detect';
 import Elements from '../components/kit/components/elements';
 import Forms from '../components/kit/components/form';
 import Commerce from '../components/kit/components/commerce';
 import Navigation from '../components/kit/components/navigation';
 import Pagesection from '../components/kit/components/pagesection';
 import ListPage from '../components/kit/components/list';
+import HomePage from '../components/kit/templates/homePages';
+import ErrorPages from '../components/kit/templates/errorsPages';
+import DashboardPages from '../components/kit/templates/dashboardPages';
 
 export const IndexPage: FC = () => {
     return (
@@ -34,7 +34,7 @@ export const IndexPage: FC = () => {
                         <div className="flex items-start space-x-4 md:items-center">
                             <div className="rounded-md shadow inline-block">
                                 <Link href="/started">
-                                    <a className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2">
+                                    <a className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
                                         Get started
                                     </a>
                                 </Link>
@@ -44,7 +44,7 @@ export const IndexPage: FC = () => {
                                     target="_blank"
                                     rel="noreferrer"
                                     href="https://github.com/pollmix/tail-kit"
-                                    className="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-gray-800 bg-gray-100 hover:bg-gray-200 px-4 py-2"
+                                    className="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-gray-800 bg-gray-100 hover:bg-gray-200"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export const IndexPage: FC = () => {
                 </div>
             </div>
 
-            <h1 className="pt-5 pb-8 text-4xl text-bold text-center text-semibold border-t-2 text-gray-600">
+            <h1 className="pt-5 pb-8 titleHome text-2xl md:text-4xl text-bold text-center text-semibold border-t-2 text-gray-600">
                 Components and Templates
             </h1>
             <Elements />
@@ -79,6 +79,9 @@ export const IndexPage: FC = () => {
             <Navigation />
             <Pagesection />
             <ListPage />
+            <DashboardPages />
+            <HomePage />
+            <ErrorPages />
         </HomeLayout>
     );
 };

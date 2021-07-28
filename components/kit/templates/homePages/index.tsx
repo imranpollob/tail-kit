@@ -24,7 +24,7 @@ const HomePage = () => {
     ];
 
     return (
-        <SectionDesc isTemplate={true} hasCommingSoon={true} id="errors" items={homeSection} title="Landing pages" />
+        <SectionDesc isTemplate={true} hasCommingSoon={true} id="home" items={homeSection} title="Landing pages" />
     );
 };
 

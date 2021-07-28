@@ -16,7 +16,7 @@ const ErrorPages = () => {
             isTemplate={true}
             withPub
             hasCommingSoon={true}
-            id="home"
+            id="errors"
             items={homeSection}
             title="Errors pages"
         />

@@ -87,7 +87,7 @@ const AppHeader = (props: Props) => {
             {isMenuOpen && (
                 <div className="absolute top-0 z-20 inset-x-0 transition transform origin-top-right md:hidden">
                     <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50 dark:bg-gray-800">
-                        <div className="pt-5 pb-6 px-5">
+                        <div className="pt-2 pb-6 px-4">
                             <div className="flex items-center justify-between">
                                 <div>
                                     <img className="h-8 w-auto" src="/icons/rocket.svg" alt="Workflow" />
@@ -124,7 +124,7 @@ const AppHeader = (props: Props) => {
                                     {menuEntry.map((entry) => {
                                         return (
                                             <Link href={entry.link} key={entry.label}>
-                                                <a className="p-2 flex items-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                <a className="px-2 py-1 flex items-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-700">
                                                     <span className="ml-1 text-base font-normal text-gray-900 dark:text-white">
                                                         {entry.label}
                                                     </span>
@@ -140,7 +140,7 @@ const AppHeader = (props: Props) => {
                                     {menuTemplates.map((entry) => {
                                         return (
                                             <Link href={entry.link} key={entry.label}>
-                                                <a className="p-2 flex items-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                <a className="px-2 py-1 flex items-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-700">
                                                     <span className="ml-1 text-base font-normal text-gray-900 dark:text-white">
                                                         {entry.label}
                                                     </span>

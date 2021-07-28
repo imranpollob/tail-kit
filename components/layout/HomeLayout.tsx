@@ -1,5 +1,7 @@
 import { FC } from 'react';
 import AppHeader from '../site/header/AppHeader';
+import FooterLight from '../kit/components/navigation/footer/FooterLight';
+import { footerLink } from './AppLayout';
 import Meta from '../site/Meta';
 
 const HomeLayout: FC = ({ children }) => {
@@ -17,6 +19,9 @@ const HomeLayout: FC = ({ children }) => {
                         <main className="mt-10 mx-auto px-4 sm:px-6 lg:px-8">{children}</main>
                     </div>
                 </div>
+            </div>
+            <div>
+                <FooterLight links={footerLink} />
             </div>
         </>
     );

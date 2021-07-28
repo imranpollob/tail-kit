@@ -2,7 +2,7 @@ import FooterLight from '../kit/components/navigation/footer/FooterLight';
 import Meta from '../site/Meta';
 import AppHeader from '../site/header/AppHeader';
 
-const footerLink = [
+export const footerLink = [
     {
         label: 'Configuration',
         link: '/started',
@@ -20,51 +20,91 @@ const footerLink = [
 export const menuEntry = [
     {
         label: 'Elements',
-        desc: 'Buttons, Avatars, Badges, Alerts, Progress bar....',
-        link: '/components#elements',
+        link: '/#elements',
+        items: [
+            { name: 'Buttons', link: '/components/buttons' },
+            { name: 'Badges', link: '/components/badges' },
+            { name: 'Avatars', link: '/components/avatar' },
+            { name: 'Menu List', link: '/components/ddm' },
+            { name: 'Alerts', link: '/components/alerts' },
+            { name: 'Dashboards', link: '/components/data' },
+            { name: 'Progress Bars', link: '/components/progress' },
+        ],
     },
     {
         label: 'Forms',
-        desc: 'Input text, Select, Textarea, Login pages, Signin templates ...',
-        link: '/components#forms',
+        link: '/#forms',
+        items: [
+            { name: 'Inputs', link: '/components/inputtext' },
+            { name: 'Selects', link: '/components/inputselect' },
+            { name: 'Toggle', link: '/components/toggles' },
+            { name: 'Layouts', link: '/components/form' },
+        ],
     },
     {
         label: 'Commerce',
-        desc: 'Pricing cards, Shopping cards, Basket layouts...',
-        link: '/components#commerce',
+        link: '/#commerce',
+        items: [
+            { name: 'Pricing Cards', link: '/components/pricing' },
+            { name: 'Shopping Cards', link: '/components/shopping' },
+        ],
     },
     {
         label: 'Navigation',
-        desc: 'Headers, Footers, Sidebar ...',
-        link: '/components#navigation',
+        link: '/#navigation',
+        items: [
+            { name: 'Headers', link: '/components/header' },
+            { name: 'Footers', link: '/components/footer' },
+            { name: 'Sidebars', link: '/components/sidebar' },
+        ],
     },
     {
         label: 'Sections',
-        desc: 'Features, CTA, testimonial, Team sections ...',
-        link: '/components#pagesection',
+        link: '/#pagesection',
+        items: [
+            { name: 'Call to Actions', link: '/components/cta' },
+            { name: 'Testimonials', link: '/components/testimonial' },
+            { name: 'Profiles', link: '/components/profile' },
+            { name: 'Teams', link: '/components/team' },
+            { name: 'FAQs', link: '/components/faq' },
+            { name: 'Features', link: '/components/feature' },
+            { name: 'Blogs', link: '/components/blog' },
+        ],
     },
     {
         label: 'List',
-        desc: 'List, Tables, Todo list, Description List, Actions list...',
-        link: '/components#list',
+        link: '/#list',
+        items: [
+            { name: 'Tables', link: '/components/table' },
+            { name: 'Lists', link: '/components/list' },
+        ],
     },
 ];
 
 export const menuTemplates = [
     {
         label: 'Dashboard',
-        desc: 'Dashboard templates page, Admin templates....',
-        link: '/templates#dashboard',
+        link: '/#dashboard',
+        items: [
+            { name: 'Projects', link: '/templates/dashboard' },
+            { name: 'Datas', link: '/templates/datadashboard' },
+        ],
     },
     {
         label: 'Landing page',
-        desc: 'Template like sport site, product home page, Ecommerce',
-        link: '/templates#home',
+        link: '/#home',
+        items: [
+            { name: 'Products', link: '/templates/simpleHome' },
+            { name: 'Get Started', link: '/templates/getStarted' },
+            { name: 'Portfolios', link: '/templates/folio' },
+        ],
     },
     {
         label: 'Errors page',
-        desc: '404 templates page, Internal error templates....',
-        link: '/templates#errors',
+        link: '/#errors',
+        items: [
+            { name: '404 Not Found', link: '/templates/errors404' },
+        ],
     },
 ];
 
@@ -87,7 +127,7 @@ const AppLayout = ({ title, desc, children }: Props) => {
                     <main className="mx-auto max-w-7xl px-4 mt-8 sm:px-6  lg:px-8 h-full">{children}</main>
                 </div>
             </div>
-            <div className="dark">
+            <div>
                 <FooterLight links={footerLink} />
             </div>
         </div>

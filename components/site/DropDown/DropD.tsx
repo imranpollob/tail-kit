@@ -9,7 +9,10 @@ interface HeaderLink {
     label: string;
     link?: string;
     isSelected?: boolean;
-    desc?: string;
+    items: {
+        name: string;
+        link: string;
+    }[];
     icon?: JSX.Element;
 }
 
@@ -63,7 +66,7 @@ const DropD = (props: Props) => {
                 <span>{props.label}</span>
 
                 <svg
-                    className="h-5 w-5 text-gray-500 dark:text-gray-100 hover:text-gray-500 dark:hover:text-white"
+                    className={`h-5 w-5 text-gray-500 dark:text-gray-100 hover:text-gray-500 dark:hover:text-white transition duration-500 ${isSectionOpen ? 'transform rotate-180' : ''}`}
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
@@ -79,19 +82,29 @@ const DropD = (props: Props) => {
             {isSectionOpen && (
                 <div ref={listElement} className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0">
                     <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 divide-y divide-gray-300">
+                        <div className="bg-white px-5 py-2 divide-y divide-gray-300">
                             {props.links.map((entry) => {
                                 return (
-                                    <Link href={entry.link} key={entry.label}>
-                                        <a className="-m-3 py-2 flex items-center hover:text-indigo-600  text-gray-900">
-                                            {entry.icon}
-
-                                            <div className="font-normal">
-                                                <p className="text-lg">{entry.label}</p>
-                                                <p className="text-xs mt-0 text-gray-400">{entry.desc}</p>
-                                            </div>
-                                        </a>
-                                    </Link>
+                                    <div className="py-3" key={entry.label}>
+                                        <Link href={entry.link}>
+                                            <a className="flex items-center font-semibold text-lg hover:text-indigo-600  text-gray-700">
+                                                {entry.label}
+                                            </a>
+                                        </Link>
+                                        <ul className="mt-1 flex gap-x-3 flex-wrap">
+                                            {entry.items.map((item) => {
+                                                return (
+                                                    <li key={item.name}>
+                                                        <Link href={item.link}>
+                                                            <a className="text-gray-500 hover:text-indigo-600">
+                                                                {item.name}
+                                                            </a>
+                                                        </Link>
+                                                    </li>
+                                                );
+                                            })}
+                                        </ul>
+                                    </div>
                                 );
                             })}
                         </div>
