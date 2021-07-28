@@ -11,6 +11,7 @@ import PricingCard6 from '../../../components/kit/components/commerce/pricing/Pr
 import PricingCard7 from '../../../components/kit/components/commerce/pricing/PricingCard7';
 import PricingCard8 from '../../../components/kit/components/commerce/pricing/PricingCard8';
 import PricingCard9 from '../../../components/kit/components/commerce/pricing/PricingCard9';
+import PricingCard10 from '../../../components/kit/components/commerce/pricing/PricingCard10';
 
 const ComponentsPage: FC = () => {
     return (
@@ -78,6 +79,13 @@ const ComponentsPage: FC = () => {
                 title="Pricing card 9"
                 element={<PricingCard9 />}
                 component={PricingCard9}
+            />
+            <ComponentLayout
+                showSwitchMode={true}
+                vertical={true}
+                title="Pricing card 10"
+                element={<PricingCard10 />}
+                component={PricingCard10}
             />
         </AppLayout>
     );
