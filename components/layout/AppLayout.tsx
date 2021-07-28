@@ -9,7 +9,7 @@ const footerLink = [
     },
     {
         label: 'Github',
-        link: 'https://github.com/Charlie85270/tail-kit',
+        link: 'https://github.com/pollmix/tail-kit',
     },
     {
         label: 'LinkedIn',
@@ -80,7 +80,7 @@ const AppLayout = ({ title, desc, children }: Props) => {
             <Meta pageTitle={title} description={desc} />
             <div className="mx-auto h-full" style={{ minHeight: 85 + 'vh' }}>
                 <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32 h-full">
-                    <div className="dark">
+                    <div>
                         <AppHeader />
                     </div>
 

@@ -32,7 +32,7 @@ const FooterLight = (props: Props) => {
                     </nav>
                     <div className="md:hidden mt-4 mx-auto w-11 h-px rounded-full"></div>
                     <div className="mt-4 md:mt-0 flex-1 flex items-center justify-center md:border-r border-gray-100">
-                        <a className="hover:text-primary-gray-20" href="https://github.com/Charlie85270/tail-kit">
+                        <a className="hover:text-primary-gray-20" href="https://github.com/pollmix/tail-kit">
                             <span className="sr-only">View on GitHub</span>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

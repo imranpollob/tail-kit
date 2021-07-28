@@ -44,7 +44,7 @@ const HeaderPage: FC = () => {
             <ComponentLayout
                 vertical={true}
                 title="Light"
-                jsLink="https://github.com/Charlie85270/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
+                jsLink="https://github.com/pollmix/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
                 element={
                     <Header
                         forceMenuOpenInMobile={true}
@@ -59,7 +59,7 @@ const HeaderPage: FC = () => {
             <ComponentLayout
                 vertical={true}
                 title="Light with shadow"
-                jsLink="https://github.com/Charlie85270/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
+                jsLink="https://github.com/pollmix/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
                 element={
                     <Header
                         links={links}
@@ -76,7 +76,7 @@ const HeaderPage: FC = () => {
             <ComponentLayout
                 vertical={true}
                 title="Align right"
-                jsLink="https://github.com/Charlie85270/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
+                jsLink="https://github.com/pollmix/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
                 element={
                     <Header
                         links={links}
@@ -95,7 +95,7 @@ const HeaderPage: FC = () => {
                 withPub
                 title="With profile ddm"
                 containerClasses="pb-32"
-                jsLink="https://github.com/Charlie85270/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
+                jsLink="https://github.com/pollmix/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
                 element={
                     <Header
                         links={links}
@@ -114,7 +114,7 @@ const HeaderPage: FC = () => {
                 vertical={true}
                 title="With icon on right"
                 containerClasses="pb-32"
-                jsLink="https://github.com/Charlie85270/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
+                jsLink="https://github.com/pollmix/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
                 element={
                     <Header
                         links={links}
@@ -133,7 +133,7 @@ const HeaderPage: FC = () => {
                 vertical={true}
                 title="Fat"
                 containerClasses="pb-32"
-                jsLink="https://github.com/Charlie85270/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
+                jsLink="https://github.com/pollmix/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
                 element={
                     <Header
                         links={links}
@@ -153,7 +153,7 @@ const HeaderPage: FC = () => {
                 vertical={true}
                 title="With search bar"
                 containerClasses="pb-32"
-                jsLink="https://github.com/Charlie85270/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
+                jsLink="https://github.com/pollmix/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
                 element={
                     <Header
                         links={links}

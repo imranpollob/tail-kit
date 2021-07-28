@@ -35,9 +35,8 @@ const Header = ({ hideGithub, hideHelp }: Props) => {
         <div className="relative bg-white z-40">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div
-                    className={`${
-                        hideGithub ? '' : 'border-b-2 '
-                    } flex justify-between items-center  border-gray-100 py-6  md:space-x-10`}
+                    className={`${hideGithub ? '' : 'border-b-2 '
+                        } flex justify-between items-center  border-gray-100 py-6  md:space-x-10`}
                 >
                     <div className="flex justify-start items-center gap-12">
                         <Link href="/">
@@ -117,7 +116,7 @@ const Header = ({ hideGithub, hideHelp }: Props) => {
                         </Link>
                     )}
                     {!hideGithub && (
-                        <a href="https://github.com/Charlie85270/tail-kit" className="">
+                        <a href="https://github.com/pollmix/tail-kit" className="">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="20"

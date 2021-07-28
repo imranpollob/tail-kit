@@ -36,9 +36,8 @@ const Header = (props: Props) => {
     return (
         <div>
             <nav
-                className={`bg-white dark:bg-gray-800 ${props.withShadow ? ' shadow' : ''}${
-                    props.isFat ? ' py-4' : ''
-                } `}
+                className={`bg-white dark:bg-gray-800 ${props.withShadow ? ' shadow' : ''}${props.isFat ? ' py-4' : ''
+                    } `}
             >
                 <div className="max-w-7xl mx-auto px-8">
                     <div className="flex items-center justify-between h-16">
@@ -53,13 +52,11 @@ const Header = (props: Props) => {
                                             <Link key={link.label} href={link.link || '#'}>
                                                 <a
                                                     key={link.label}
-                                                    className={`${
-                                                        link.isSelected
+                                                    className={`${link.isSelected
                                                             ? 'text-gray-800 dark:text-white'
                                                             : 'text-gray-300'
-                                                    }  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md ${
-                                                        props.isFat ? 'text-md' : 'text-sm'
-                                                    } font-medium`}
+                                                        }  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md ${props.isFat ? 'text-md' : 'text-sm'
+                                                        } font-medium`}
                                                 >
                                                     {link.label}
                                                 </a>
@@ -110,7 +107,7 @@ const Header = (props: Props) => {
                                 )}
                                 {!props.hideGitHubLink && (
                                     <a
-                                        href="https://github.com/Charlie85270/tail-kit"
+                                        href="https://github.com/pollmix/tail-kit"
                                         className="p-1 rounded-full text-gray-400 focus:outline-none hover:text-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                                     >
                                         <span className="sr-only">View github</span>
@@ -179,11 +176,10 @@ const Header = (props: Props) => {
                                 return (
                                     <Link key={link.label} href={link.link || '#'}>
                                         <a
-                                            className={`${
-                                                link.isSelected
+                                            className={`${link.isSelected
                                                     ? 'text-gray-800 dark:text-white'
                                                     : 'text-gray-300 hover:text-gray-800 dark:hover:text-white'
-                                            } block px-3 py-2 rounded-md text-base font-medium`}
+                                                } block px-3 py-2 rounded-md text-base font-medium`}
                                         >
                                             {link.label}
                                         </a>

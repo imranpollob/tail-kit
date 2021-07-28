@@ -29,7 +29,7 @@ const RequestPage: FC = () => {
                             </p>
 
                             <a
-                                href="https://github.com/Charlie85270/tail-kit/issues"
+                                href="https://github.com/pollmix/tail-kit/issues"
                                 className="w-40 flex items-center justify-center px-4 py-1 text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2"
                             >
                                 Open a issue

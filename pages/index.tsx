@@ -4,13 +4,19 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 const HomeComps = dynamic(() => import('../components/site/home/HomeComps'));
 import { isMobile } from 'react-device-detect';
+import Elements from '../components/kit/components/elements';
+import Forms from '../components/kit/components/form';
+import Commerce from '../components/kit/components/commerce';
+import Navigation from '../components/kit/components/navigation';
+import Pagesection from '../components/kit/components/pagesection';
+import ListPage from '../components/kit/components/list';
 
 export const IndexPage: FC = () => {
     return (
         <HomeLayout>
-            <div className="flex flex-col md:flex-row w-full items-start justify-between md:justify-start h-full md:h-1/2">
-                <div className="text-left z-20 md:z-30 w-full md:w-1/2 flex flex-col items-start justify-start md:justify-center h-full">
-                    <h1 className="tracking-tight font-extrabold text-gray-900 titleHome text-5xl lg:text-6xl md:mt-24 lg:mt-0">
+            <div className="w-full pb-12 md:pb-16 lg:pb-20 border-b-1">
+                <div className="text-left z-20 md:z-30 w-full">
+                    <h1 className="tracking-tight font-extrabold text-gray-900 titleHome text-5xl lg:text-6xl">
                         <span className="flex w-full m-auto text-indigo-600">Tail-kit&nbsp;</span>
                         <span className="block font-bold xl:inline">
                             <span className="">Components and templates&nbsp;</span>
@@ -37,7 +43,7 @@ export const IndexPage: FC = () => {
                                 <a
                                     target="_blank"
                                     rel="noreferrer"
-                                    href="https://github.com/Charlie85270/tail-kit"
+                                    href="https://github.com/pollmix/tail-kit"
                                     className="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-gray-800 bg-gray-100 hover:bg-gray-200 px-4 py-2"
                                 >
                                     <svg
@@ -62,8 +68,15 @@ export const IndexPage: FC = () => {
                         </Link>
                     </h3>
                 </div>
-                <div className="z-20">{!isMobile && <HomeComps />}</div>
             </div>
+
+            <h1 className="pt-5 pb-8 text-4xl text-bold text-center text-semibold border-t-2 text-gray-600">Components and Templates</h1>
+            <Elements />
+            <Forms />
+            <Commerce />
+            <Navigation />
+            <Pagesection />
+            <ListPage />
         </HomeLayout>
     );
 };

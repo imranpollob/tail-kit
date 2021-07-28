@@ -11,18 +11,18 @@ const AppHeader = (props: Props) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div className="relative bg-transparent dark:bg-gray-800 z-50">
+        <div className="relative bg-transparent dark:bg-gray-800 z-50 shadow">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <div className={`flex justify-between items-center  border-gray-100 py-6  md:space-x-10`}>
+                <div className="flex justify-between items-center border-gray-100 py-3 md:space-x-10">
                     <div className="flex justify-start items-center gap-12">
                         <Link href="/">
                             <a className="flex items-center">
-                                <img className="h-8 w-auto sm:h-12" src="/icons/rocket.svg" alt="site" />
+                                <img className="h-8 w-auto" src="/icons/rocket.svg" alt="site" />
                             </a>
                         </Link>
                         <nav className="hidden md:flex space-x-10">
-                            <DropD label="&#129513; Components" links={menuEntry} />
-                            <DropD label="&#127912; Templates" links={menuTemplates} />
+                            <DropD label="Components" links={menuEntry} />
+                            <DropD label="Templates" links={menuTemplates} />
                         </nav>
                     </div>
                     {!props.hideLinks && (
@@ -43,7 +43,7 @@ const AppHeader = (props: Props) => {
                             </Link>
 
                             <a
-                                href="https://github.com/Charlie85270/tail-kit"
+                                href="https://github.com/pollmix/tail-kit"
                                 target="_blank"
                                 rel="noreferrer"
                                 className=""

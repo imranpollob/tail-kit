@@ -28,7 +28,7 @@ const SearchHeader = () => {
             </div>
             <div className="flex items-center mr-8 hidden md:flex">
                 <a
-                    href="https://github.com/Charlie85270/tail-kit"
+                    href="https://github.com/pollmix/tail-kit"
                     className="p-1 rounded-full text-white focus:outline-none hover:text-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
                     <span className="sr-only">View github</span>

@@ -19,12 +19,12 @@ const InputTextPage: FC = () => {
             <ComponentLayout title="with label" element={<SelectWithLabel />} component={SelectWithLabel} />
             <ComponentLayout
                 title="custom"
-                jsLink="https://github.com/Charlie85270/tail-kit"
+                jsLink="https://github.com/pollmix/tail-kit"
                 element={<CustomSelect forceOpen={true} hideImage={true} />}
                 component={CustomSelect}
             />
             <ComponentLayout
-                jsLink="https://github.com/Charlie85270/tail-kit"
+                jsLink="https://github.com/pollmix/tail-kit"
                 title="custom with image"
                 element={<CustomSelect forceOpen={true} />}
                 component={CustomSelect}
