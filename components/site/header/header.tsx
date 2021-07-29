@@ -84,9 +84,6 @@ const Header = ({ hideGithub, hideHelp }: Props) => {
                                                                     <p className="text-lg text-gray-900">
                                                                         {entry.label}
                                                                     </p>
-                                                                    <p className="mt-1 text-sm text-gray-500">
-                                                                        {entry.desc}
-                                                                    </p>
                                                                 </div>
                                                             </a>
                                                         </Link>
