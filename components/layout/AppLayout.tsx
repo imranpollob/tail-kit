@@ -13,7 +13,7 @@ export const footerLink = [
     },
     {
         label: 'LinkedIn',
-        link: 'https://www.linkedin.com/in/crabiller/',
+        link: 'https://www.linkedin.com/in/pollmix/',
     },
 ];
 

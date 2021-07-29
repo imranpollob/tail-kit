@@ -4,6 +4,7 @@ import { LiveProvider, LiveEditor } from 'react-live';
 import EDITOR_THEME from '../../editorTheme';
 import Link from 'next/link';
 import SquarePub from '../../components/site/Pub/SquarePub';
+import { WarningSVG } from '../../components/site/SVG'
 
 const confCode = `module.exports = {
   important: true,
@@ -89,13 +90,41 @@ const StartedPage: FC = () => {
                     </p>
                     <div className="md:flex md:items-center md:space-x-4">
                         <Link href="/components">
-                            <a className="w-auto block mb-4 px-4 py-3 text-base font-medium rounded-md text-center text-white bg-gray-800 hover:bg-gray-700">
-                                &#129513; See components
+                            <a className="flex items-start justify-center space-x-2 mb-4 px-4 py-3 text-base font-medium rounded-md text-center text-white bg-gray-800 hover:bg-gray-700">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="h-6 w-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                                    />
+                                </svg>
+                                <span>See Components</span>
                             </a>
                         </Link>
                         <Link href="/templates">
-                            <a className="w-auto block mb-4 px-4 py-3 text-base font-medium rounded-md text-center text-white bg-gray-800 hover:bg-gray-700">
-                                &#127912; See templates
+                            <a className="flex items-start justify-center space-x-2 mb-4 px-4 py-3 text-base font-medium rounded-md text-center text-white bg-gray-800 hover:bg-gray-700">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="h-6 w-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                    />
+                                </svg>
+                                <span>See Templates</span>
                             </a>
                         </Link>
                     </div>
@@ -112,22 +141,12 @@ const StartedPage: FC = () => {
                 </p>
                 <p className="block md:flex items-center">
                     All components that need configuration are indicated with this sign:
-                    <a
-                        className="ml-4 w-52 justify-between text-black border border-gray-800 bg-yellow-300 hover:bg-yellow-400 rounded-lg p-2 flex items-center"
-                        href="#"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            fill="currentColor"
-                            className="mr-2"
-                            viewBox="0 0 1792 1792"
-                        >
-                            <path d="M1024 1375v-190q0-14-9.5-23.5t-22.5-9.5h-192q-13 0-22.5 9.5t-9.5 23.5v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19-13-11-24-11h-220q-11 0-24 11-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126-17 29-46.5 46t-63.5 17h-1536q-34 0-63.5-17t-46.5-46q-37-63-2-126l768-1408q17-31 47-49t65-18 65 18 47 49z" />
-                        </svg>
-                        Need configuration
-                    </a>
+                    <Link href="/started#configuration">
+                        <a className="ml-4 flex items-center text-black border border-gray-800 bg-yellow-200 hover:bg-yellow-300 rounded-lg px-2 py-0">
+                            <WarningSVG />
+                            <span className="pl-1">Need configuration</span>
+                        </a>
+                    </Link>
                 </p>
 
                 <div className="mt-4">
