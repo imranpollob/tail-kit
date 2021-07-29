@@ -13,8 +13,8 @@ const HomeLayout: FC = ({ children }) => {
             />
 
             <div className="relative bg-white">
-                <div className="max-w-7xl mx-auto ">
-                    <div className="relative pb-8 bg-white sm:pb-16 md:pb-20  lg:w-full lg:pb-28 xl:pb-32 ">
+                <div className="max-w-7xl mx-auto">
+                    <div className="relative pb-8 bg-white sm:pb-16 md:pb-20  lg:w-full lg:pb-28 xl:pb-32">
                         <AppHeader hideLinks={true} />
                         <main className="mt-10 mx-auto px-4 sm:px-6 lg:px-8">{children}</main>
                     </div>

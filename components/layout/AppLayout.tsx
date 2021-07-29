@@ -102,9 +102,7 @@ export const menuTemplates = [
     {
         label: 'Errors page',
         link: '/#errors',
-        items: [
-            { name: '404 Not Found', link: '/templates/errors404' },
-        ],
+        items: [{ name: '404 Not Found', link: '/templates/errors404' }],
     },
 ];
 
@@ -116,21 +114,21 @@ interface Props {
 
 const AppLayout = ({ title, desc, children }: Props) => {
     return (
-        <div className="relative bg-white ">
+        <>
             <Meta pageTitle={title} description={desc} />
-            <div className="mx-auto h-full" style={{ minHeight: 85 + 'vh' }}>
-                <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32 h-full">
-                    <div>
-                        <AppHeader />
-                    </div>
 
-                    <main className="mx-auto max-w-7xl px-4 mt-8 sm:px-6  lg:px-8 h-full">{children}</main>
+            <div className="relative bg-white ">
+                <div className="max-w-7xl mx-auto">
+                    <div className="relative pb-8 bg-white sm:pb-16 md:pb-20  lg:w-full lg:pb-28 xl:pb-32">
+                        <AppHeader />
+                        <main className="mx-auto max-w-7xl px-4 mt-8 sm:px-6  lg:px-8 h-full">{children}</main>
+                    </div>
+                </div>
+                <div>
+                    <FooterLight links={footerLink} />
                 </div>
             </div>
-            <div>
-                <FooterLight links={footerLink} />
-            </div>
-        </div>
+        </>
     );
 };
 
