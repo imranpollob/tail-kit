@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { menuEntry, menuTemplates } from '../../layout/AppLayout';
 import DropDown from '../components/DropDown';
-import { HamburgerOpenSVG, HamburgerCloseSVG, SettingsSVG, GithubSVG } from '../SVG';
+import { ComponentsSVG, TemplatesSVG, HamburgerOpenSVG, HamburgerCloseSVG, SettingsSVG, GithubSVG } from '../SVG';
 
 interface Props {
     hideLinks?: boolean;
@@ -22,12 +22,12 @@ const AppHeader = (props: Props) => {
                             </a>
                         </Link>
                         <nav className="hidden md:flex space-x-10">
-                            <DropDown label="Components" links={menuEntry} />
-                            <DropDown label="Templates" links={menuTemplates} />
+                            <DropDown svg={<ComponentsSVG />} label="Components" links={menuEntry} />
+                            <DropDown svg={<TemplatesSVG />} label="Templates" links={menuTemplates} />
                         </nav>
                     </div>
                     {!props.hideLinks && (
-                        <div className="flex item-center justify-end">
+                        <div className="flex item-center justify-end space-x-1">
                             <Link href="/started">
                                 <a className="flex items-center">
                                     <SettingsSVG />

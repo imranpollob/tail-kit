@@ -89,7 +89,7 @@ const StartedPage: FC = () => {
                         Once Tailwind CSS is installed, you can get started!
                     </p>
                     <div className="md:flex md:items-center md:space-x-4">
-                        <Link href="/components">
+                        <Link href="/#elements">
                             <a className="flex items-start justify-center space-x-2 mb-4 px-4 py-3 text-base font-medium rounded-md text-center text-white bg-gray-800 hover:bg-gray-700">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,7 @@ const StartedPage: FC = () => {
                                 <span>See Components</span>
                             </a>
                         </Link>
-                        <Link href="/templates">
+                        <Link href="/#dashboard">
                             <a className="flex items-start justify-center space-x-2 mb-4 px-4 py-3 text-base font-medium rounded-md text-center text-white bg-gray-800 hover:bg-gray-700">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"

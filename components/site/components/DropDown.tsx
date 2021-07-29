@@ -1,10 +1,11 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import { ComponentsSVG, DropdownSVG } from '../SVG';
+import { DropdownSVG } from '../SVG';
 
 interface Props {
     links: HeaderLink[];
     label: string;
+    svg?: JSX.Element;
 }
 interface HeaderLink {
     label: string;
@@ -49,7 +50,8 @@ const DropDown = (props: Props) => {
                 onClick={() => setIsSectionOpen(!isSectionOpen)}
                 className="group p-2 text-gray-800 dark:text-white inline-flex items-center text-lg font-light hover:text-black dark:hover:text-gray-50 focus:outline-none focus:ring-2 focus:ring-white space-x-1"
             >
-                <ComponentsSVG />
+                {/* <ComponentsSVG /> */}
+                {props.svg}
                 <span>{props.label}</span>
                 <DropdownSVG isSectionOpen={isSectionOpen} />
             </button>

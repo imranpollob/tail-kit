@@ -115,8 +115,8 @@ const ComponentLayout = (props: Props) => {
                         <button
                             onClick={copyCode}
                             className={`flex items-center px-2 py-0 text-base font-medium rounded-md ${hasCopied
-                                ? 'text-white bg-green-700 border border-green-700'
-                                : 'text-green-500 hover:text-white bg-white hover:bg-green-500 border border-green-500 hover:border-green-500'
+                                    ? 'text-white bg-green-700 border border-green-700'
+                                    : 'text-green-500 hover:text-white bg-white hover:bg-green-500 border border-green-500 hover:border-green-500'
                                 }`}
                         >
                             <CopySVG />
@@ -125,7 +125,7 @@ const ComponentLayout = (props: Props) => {
                     </div>
                 </div>
 
-                <LiveProvider scope={scope} theme={EDITOR_THEME} disabled={editStatus} language="markup" code={code()}>
+                <LiveProvider scope={scope} theme={EDITOR_THEME} disabled={!editStatus} language="markup" code={code()}>
                     <div
                         className={`${props.vertical ? 'flex-col justify-center' : 'flex-col md:flex-row justify-between '
                             } flex gap-4 items-start ${props.fullscreen ? '' : 'mx-4 py-12'}`}
