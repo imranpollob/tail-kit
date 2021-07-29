@@ -10,7 +10,7 @@ const dDtadashboardTemplates = () => {
             title="Free admin datas dashboard templates for tailwind css"
             desc="Tailwind dashboard and admin data templates for react, VueJS and Angular with tailwind css "
         >
-            <SectionHeader backLink="/templates" title="Datas dashboard templates" />
+            <SectionHeader backLink="/#dashboard" title="Datas dashboard templates" />
 
             <ComponentLayout
                 showSwitchMode={true}

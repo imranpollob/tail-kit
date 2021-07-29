@@ -19,7 +19,7 @@ const ComponentsPage: FC = () => {
         'I had noticed that both in the very poor and very rich extremes of society the mad were often allowed to mingle freely';
     return (
         <AppLayout title="CTA free Tailwind components" desc="CTA, Banners and more components for tailwind css">
-            <SectionHeader title="Call to Actions" />
+            <SectionHeader title="Call to Actions" backLink="/#pagesection" />
             <ComponentLayout
                 vertical={true}
                 showSwitchMode={true}

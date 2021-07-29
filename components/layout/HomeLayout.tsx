@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import AppHeader from '../site/header/AppHeader';
-import FooterLight from '../kit/components/navigation/footer/FooterLight';
+import Footer from '../site/components/Footer';
 import { footerLink } from './AppLayout';
 import Meta from '../site/Meta';
 
@@ -20,9 +20,7 @@ const HomeLayout: FC = ({ children }) => {
                     </div>
                 </div>
             </div>
-            <div>
-                <FooterLight links={footerLink} />
-            </div>
+            <Footer links={footerLink} />
         </>
     );
 };

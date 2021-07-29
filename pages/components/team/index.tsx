@@ -12,7 +12,7 @@ import DoubleTeam from '../../../components/kit/components/pagesection/team/Doub
 const TeamPage: FC = () => {
     return (
         <AppLayout title="Teams section free Tailwind components" desc="Teams and more components for tailwind css">
-            <SectionHeader title="Teams" />
+            <SectionHeader title="Teams" backLink="/#pagesection" />
             <ComponentLayout
                 title="Simple"
                 element={

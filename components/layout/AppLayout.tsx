@@ -1,19 +1,19 @@
-import FooterLight from '../kit/components/navigation/footer/FooterLight';
 import Meta from '../site/Meta';
 import AppHeader from '../site/header/AppHeader';
+import Footer from '../site/components/Footer';
 
 export const footerLink = [
     {
-        label: 'Configuration',
-        link: '/started',
+        label: 'LinkedIn',
+        link: 'https://www.linkedin.com/in/pollmix/',
     },
     {
         label: 'Github',
-        link: 'https://github.com/pollmix/tail-kit',
+        link: 'https://github.com/pollmix/',
     },
     {
-        label: 'LinkedIn',
-        link: 'https://www.linkedin.com/in/pollmix/',
+        label: 'Facebook',
+        link: 'https://www.facebook.com/pollmix/',
     },
 ];
 
@@ -119,14 +119,12 @@ const AppLayout = ({ title, desc, children }: Props) => {
 
             <div className="relative bg-white ">
                 <div className="max-w-7xl mx-auto">
-                    <div className="relative pb-8 bg-white sm:pb-16 md:pb-20  lg:w-full lg:pb-28 xl:pb-32">
+                    <div className="relative pb-14 bg-white sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32">
                         <AppHeader />
                         <main className="mx-auto max-w-7xl px-4 mt-8 sm:px-6  lg:px-8 h-full">{children}</main>
                     </div>
                 </div>
-                <div>
-                    <FooterLight links={footerLink} />
-                </div>
+                <Footer links={footerLink} />
             </div>
         </>
     );

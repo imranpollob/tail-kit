@@ -13,7 +13,7 @@ const ListPages: FC = () => {
             title="List display text free Tailwind components"
             desc="List, Ordered list and more components for tailwind css"
         >
-            <SectionHeader title="Lists" />
+            <SectionHeader title="Lists" backLink="/#list" />
             <ComponentLayout
                 showSwitchMode={true}
                 title="Simple list"

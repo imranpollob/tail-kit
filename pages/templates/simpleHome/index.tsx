@@ -14,7 +14,7 @@ const HomePage = () => {
             title="Free Tailwind home page template for tailwind css"
             desc="Tailwind home page templates and components for tailwind css"
         >
-            <SectionHeader backLink="/templates" title="Simple landing page templates" />
+            <SectionHeader backLink="/#home" title="Simple landing page templates" />
             <ComponentLayout
                 vertical={true}
                 title="Tail-kit landing page"

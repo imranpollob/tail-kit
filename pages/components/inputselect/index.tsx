@@ -13,7 +13,7 @@ const InputTextPage: FC = () => {
             title="Select input free Tailwind components"
             desc="Select input and more components for tailwind css"
         >
-            <SectionHeader title="Selects" />
+            <SectionHeader title="Selects" backLink="/#forms" />
             <ComponentLayout title="simple" element={<Select />} component={Select} />
             <ComponentLayout title="simple2" element={<Select2 />} component={Select2} />
             <ComponentLayout title="with label" element={<SelectWithLabel />} component={SelectWithLabel} />

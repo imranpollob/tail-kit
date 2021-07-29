@@ -11,7 +11,7 @@ const BlogPage = () => {
             title="Blogs free Tailwind components"
             desc="Blogs cards, Blogs layouts,... components for tailwind css"
         >
-            <SectionHeader title="Blogs" />
+            <SectionHeader title="Blogs" backLink="/#pagesection" />
             <ComponentLayout
                 vertical={false}
                 showSwitchMode={true}

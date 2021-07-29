@@ -64,7 +64,7 @@ const DdmPages: FC = () => {
             title="Drop down menu free Tailwind components"
             desc="Drop down menu and more components for tailwind css"
         >
-            <SectionHeader title="Dropdowns" />
+            <SectionHeader title="Dropdowns" backLink="/#elements" />
             <ComponentLayout
                 containerClasses="pb-40"
                 title="Simple ddm"

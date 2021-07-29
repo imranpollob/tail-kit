@@ -12,7 +12,7 @@ const TogglePage: FC = () => {
             title="Toggle elements section free Tailwind components"
             desc="Toggle elements and more components for tailwind css"
         >
-            <SectionHeader title="Toggle" />
+            <SectionHeader title="Toggle" backLink="/#forms" />
             <ComponentLayout title="simple" needConfiguration={true} element={<Checkbox />} component={Checkbox} />
             <ComponentLayout
                 title="toggle"

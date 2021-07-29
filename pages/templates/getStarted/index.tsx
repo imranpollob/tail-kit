@@ -12,7 +12,7 @@ const HomePage = () => {
             title="Tailwind UI KIT - Configuration to use tailwind components and templates"
             desc="Configuration page to user templates and components for tailwind css in your ReactJS, VueJS or Angular application."
         >
-            <SectionHeader backLink="/templates" title="Get started landing page templates" />
+            <SectionHeader backLink="/#home" title="Get started landing page templates" />
 
             <ComponentLayout
                 vertical={true}

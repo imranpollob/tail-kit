@@ -12,7 +12,7 @@ const The404pages = () => {
             title="Free Tailwind 404 template pages for tailwind css"
             desc="Tailwind 404 template pages templates and components for tailwind css"
         >
-            <SectionHeader backLink="/templates" title="404 templates pages" />
+            <SectionHeader backLink="/#errors" title="404 templates pages" />
 
             <ComponentLayout vertical={true} title="Simple 404" element={<Simple404 />} component={Simple404} />
             <ComponentLayout

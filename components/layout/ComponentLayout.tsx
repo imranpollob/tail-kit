@@ -82,7 +82,7 @@ const ComponentLayout = (props: Props) => {
             >
                 <div className="flex items-center justify-between bg-white p-1 border-2 border-gray-100">
                     <div className="flex items-center justify-center space-x-2">
-                        <p className="text-lg font-bolder text-gray-500">{props.title} </p>
+                        <p className="hidden md:block text-lg font-bolder text-gray-500">{props.title} </p>
                         {props.jsLink && (
                             <a
                                 className="flex items-center text-black border border-gray-800 bg-yellow-200 hover:bg-yellow-300 rounded-lg px-2 py-0"
@@ -115,8 +115,8 @@ const ComponentLayout = (props: Props) => {
                         <button
                             onClick={copyCode}
                             className={`flex items-center px-2 py-0 text-base font-medium rounded-md ${hasCopied
-                                    ? 'text-white bg-green-700 border border-green-700'
-                                    : 'text-green-500 hover:text-white bg-white hover:bg-green-500 border border-green-500 hover:border-green-500'
+                                ? 'text-white bg-green-700 border border-green-700'
+                                : 'text-green-500 hover:text-white bg-white hover:bg-green-500 border border-green-500 hover:border-green-500'
                                 }`}
                         >
                             <CopySVG />

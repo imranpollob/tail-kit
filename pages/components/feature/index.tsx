@@ -14,7 +14,7 @@ const FeaturePage = () => {
             title="Features sections free Tailwind components"
             desc="Features sections more components for tailwind css"
         >
-            <SectionHeader title="Features" />
+            <SectionHeader title="Features" backLink="/#pagesection" />
             <ComponentLayout
                 vertical={true}
                 title="With cards"

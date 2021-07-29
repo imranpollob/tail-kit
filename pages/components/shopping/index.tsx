@@ -13,7 +13,7 @@ import ProductWithEval from '../../../components/kit/components/commerce/shoppin
 const ShoppingPage: FC = () => {
     return (
         <AppLayout title="Shopping cards free Tailwind components" desc="Shopping cards components for tailwind css">
-            <SectionHeader title="Shopping" />
+            <SectionHeader title="Shopping" backLink="/#commerce" />
 
             <ComponentLayout title="Simple" element={<SimpleShoppingCard />} component={SimpleShoppingCard} />
 

@@ -15,7 +15,7 @@ const ComponentsPage: FC = () => {
             title="Profile cards free Tailwind components"
             desc="Profile cards and more components for tailwind css"
         >
-            <SectionHeader title="Profiles" />
+            <SectionHeader title="Profiles" backLink="/#pagesection" />
             <ComponentLayout
                 showSwitchMode={true}
                 title="Simple horizontal"

@@ -12,7 +12,7 @@ import ColoredTextAndBadge from '../../../components/kit/components/elements/bad
 const BadgesPage: FC = () => {
     return (
         <AppLayout title="Badges free Tailwind components" desc="Badges, Popins... components for tailwind css">
-            <SectionHeader title="Badges" />
+            <SectionHeader title="Badges" backLink="/#elements" />
             <ComponentLayout
                 title="Badge"
                 element={

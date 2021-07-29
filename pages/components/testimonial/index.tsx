@@ -17,7 +17,7 @@ const ComponentsPage: FC = () => {
             title="Testimonials section free Tailwind components"
             desc="Testimonials and more components for tailwind css"
         >
-            <SectionHeader title="Testimonials" />
+            <SectionHeader title="Testimonials" backLink="/#pagesection" />
             <ComponentLayout
                 showSwitchMode={true}
                 title="Small"

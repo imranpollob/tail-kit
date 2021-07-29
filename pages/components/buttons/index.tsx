@@ -16,7 +16,7 @@ const ComponentsPage: FC = () => {
             title="Buttons free Tailwind components"
             desc="Buttons, Social buttons and more components for tailwind css"
         >
-            <SectionHeader title="Buttons" />
+            <SectionHeader title="Buttons" backLink="/#elements" />
             <ComponentLayout title="Button" element={<Button label="Valider" color="indigo" />} component={Button} />
             <ComponentLayout
                 title="Button with icon"

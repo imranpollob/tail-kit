@@ -19,7 +19,7 @@ const ComponentsPage: FC = () => {
             title="Pricing cards free Tailwind components"
             desc="Pricing cards and more components for tailwind css"
         >
-            <SectionHeader title="Pricing" />
+            <SectionHeader title="Pricing" backLink="/#commerce" />
 
             <ComponentLayout
                 showSwitchMode={true}

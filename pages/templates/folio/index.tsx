@@ -10,7 +10,7 @@ const Folio = () => {
             title="Free Tailwind portfolio and folio templates for tailwind css"
             desc="Tailwind portfolio and folio templates and components for tailwind css"
         >
-            <SectionHeader backLink="/templates" title="Portfolio landing page templates" />
+            <SectionHeader backLink="/#home" title="Portfolio landing page templates" />
 
             <ComponentLayout
                 showSwitchMode={true}

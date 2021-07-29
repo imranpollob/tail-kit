@@ -17,7 +17,7 @@ const TogglePage: FC = () => {
             title="Toggle, Checkbox and Radio buttons components for tailwind css"
             desc="Free and open source toggle, checkbox and radio buttons components for tailwind css"
         >
-            <SectionHeader title="Form layouts" />
+            <SectionHeader title="Form layouts" backLink="/#forms" />
             <ComponentLayout
                 title="Subscribe"
                 element={<FormSubscribe label="Subscribe" placeholder="Email" />}
